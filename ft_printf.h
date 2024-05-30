@@ -1,13 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_puthex.c                                        :+:      :+:    :+:   */
+/*   ft_printf.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: iizquier <iizquier@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/05/30 16:57:15 by iizquier          #+#    #+#             */
-/*   Updated: 2024/05/30 16:59:04 by iizquier         ###   ########.fr       */
+/*   Created: 2024/05/30 16:55:56 by iizquier          #+#    #+#             */
+/*   Updated: 2024/05/30 16:56:24 by iizquier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+
+#ifndef FT_PRINTF_H
+# define FT_PRINTF_H
+
+# include <stdio.h>
+# include <unistd.h>
+# include <string.h>
+# include <stdlib.h>
+# include <stdarg.h>
+
+int		ft_putchar(int c);
+int		ft_putstr();
+int		ft_puthex();
+int		ft_putnbr();
+int		ft_printf();
+int		ft_putptr();
+int		ft_putunsigned();
+
+#endif
