@@ -6,7 +6,7 @@
 /*   By: iizquier <iizquier@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/30 16:55:56 by iizquier          #+#    #+#             */
-/*   Updated: 2024/05/30 16:56:24 by iizquier         ###   ########.fr       */
+/*   Updated: 2024/05/31 13:46:57 by iizquier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ int		ft_putchar(int c);
 int		ft_putstr();
 int		ft_puthex();
 int		ft_putnbr();
-int		ft_printf();
+int		ft_printf(const char *format, ...);
 int		ft_putptr();
 int		ft_putunsigned();
 
