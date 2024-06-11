@@ -18,6 +18,7 @@
 # include <string.h>
 # include <stdlib.h>
 # include <stdarg.h>
+# include <stdint.h>
 
 int		ft_putchar(int c);
 void	ft_putchar_fd(char c, int fd);
