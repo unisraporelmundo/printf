@@ -12,7 +12,7 @@
 
 #include "ft_printf.h"
 
-static int	converter(char format, va_list args)
+static int	ft_converter(char format, va_list args)
 {
 	if (format == 'c')
 		return (ft_putchar(va_arg(args, int)));
@@ -46,7 +46,7 @@ int	ft_printf(const char *format, ...)
 	{
 		if (format[i] == '%')
 		{
-			length += converter(format[i + 1], args);
+			length += ft_converter(format[i + 1], args);
 			i++;
 		}
 		else
