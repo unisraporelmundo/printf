@@ -13,16 +13,16 @@ La función principal del proyecto. Se encuentra en [ft_printf.c](https://github
 Esta función:
 1. Inicializa una lista de argumentos variables usando `va_start`.
 2. Itera sobre la cadena de formato.
-3. Llama a `convert` cuando encuentra un `%`.
+3. Llama a `ft_convert` cuando encuentra un `%`.
 4. Imprime caracteres normales directamente.
 5. Finaliza la lista de argumentos con `va_end`.
 6. Devuelve el número de caracteres impresos.
 
 ### Funciones Auxiliares
 
-#### ⭐️ CONVERTER
+#### ⭐️ FT_CONVERTER
 
-Ubicada en [Converter](https://github.com/unisraporelmundo/printf/blob/main/ft_printf.c).
+Ubicada en [Ft_Converter](https://github.com/unisraporelmundo/printf/blob/main/ft_printf.c).
 
 Esta función determina qué tipo de dato procesar basándose en el especificador y llama a la función correspondiente:
 - `'c'`: `ft_putchar`
