@@ -6,11 +6,13 @@
 /*   By: iizquier <iizquier@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/30 16:57:36 by iizquier          #+#    #+#             */
-/*   Updated: 2024/06/11 16:00:50 by iizquier         ###   ########.fr       */
+/*   Updated: 2024/06/11 17:11:59 by iizquier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
+
+int	ft_strlen( const char *str);
 
 int	ft_putstr(char *str)
 {

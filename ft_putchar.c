@@ -6,14 +6,13 @@
 /*   By: iizquier <iizquier@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/30 16:38:16 by iizquier          #+#    #+#             */
-/*   Updated: 2024/06/04 11:29:39 by iizquier         ###   ########.fr       */
+/*   Updated: 2024/06/11 17:16:38 by iizquier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int	ft_putchar(char c)
+int	ft_putchar(int c)
 {
-	write (1, &c, 1);
-	return (1);
+	return (write(1, &c, 1));
 }

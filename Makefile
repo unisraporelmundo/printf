@@ -7,7 +7,9 @@ FILES = \
 	ft_putnbr.c\
 	ft_putstr.c\
 	ft_putchar.c\
+	ft_putchar_fd.c\
 	ft_putptr.c\
+	ft_strlen.c\
 
 OBJ = $(FILES:.c=.o)
 
