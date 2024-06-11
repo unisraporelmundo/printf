@@ -45,16 +45,16 @@ void	ft_putptrhex(uintptr_t num)
 
 int	ft_putptr(uintptr_t ptr)
 {
-	int	lenght;
+	int	length;
 
-	lenght = 0;
-	lenght += write(1, "0x", 2);
+	length = 0;
+	length += write(1, "0x", 2);
 	if (ptr == 0)
-		lenght += write(1, "0", 1);
+		length += write(1, "0", 1);
 	else
 	{
 		ft_putptrhex(ptr);
-		lenght += ft_ptrlen(ptr);
+		length += ft_ptrlen(ptr);
 	}
-	return (lenght);
+	return (length);
 }
