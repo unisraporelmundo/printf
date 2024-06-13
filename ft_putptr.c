@@ -6,7 +6,7 @@
 /*   By: iizquier <iizquier@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/30 16:57:32 by iizquier          #+#    #+#             */
-/*   Updated: 2024/06/11 17:05:53 by iizquier         ###   ########.fr       */
+/*   Updated: 2024/06/12 13:51:02 by iizquier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,10 +47,15 @@ int	ft_putptr(uintptr_t ptr)
 {
 	int	length;
 
+	if (ptr == 0)
+	{
+		ft_putstr("(nil)");
+		return (5);
+	}
 	length = 0;
 	length += write(1, "0x", 2);
 	if (ptr == 0)
-		length += write(1, "0", 1);
+		length += write(1, "0", 1) + 2;
 	else
 	{
 		ft_putptrhex(ptr);
